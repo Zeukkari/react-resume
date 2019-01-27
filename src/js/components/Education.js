@@ -38,4 +38,4 @@ Education.defaultProps = {
   education: [],
 }
 
-export default Education
+export { Education }

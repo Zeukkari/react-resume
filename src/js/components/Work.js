@@ -38,4 +38,4 @@ Work.defaultProps = {
   work: [],
 }
 
-export default Work
+export { Work }

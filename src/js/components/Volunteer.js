@@ -42,4 +42,4 @@ Volunteer.defaultProps = {
   volunteer: [],
 }
 
-export default Volunteer
+export { Volunteer }

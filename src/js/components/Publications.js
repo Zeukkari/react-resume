@@ -4,32 +4,31 @@ import { Box, Paragraph, Heading, Text } from 'grommet'
 
 import { ResumeSection, SectionTitle } from './common'
 
-const Awards = ({ awards }) => {
-  const renderItems = awards.map(item => {
+const Publications = ({ publications }) => {
+  const renderItems = publications.map(item => {
     return (
-      <Box key={item.title}>
-        <Heading level={3}>{item.title}</Heading>
-        <Heading level={4}>{item.awarder}</Heading>
+      <Box key="item.company">
+        <Heading level={3}>{item.name}</Heading>
         <Text weight="bold" size="medium">
-          {item.date}
+          {item.publisher}
         </Text>
+        <Text>{item.releaseDate}</Text>
         <Paragraph>{item.summary}</Paragraph>
       </Box>
     )
   })
-
   return (
     <Box margin="none" pad="none" border="all">
       <ResumeSection>
-        <SectionTitle>Awards</SectionTitle>
+        <SectionTitle>Publications</SectionTitle>
         <Box>{renderItems}</Box>
       </ResumeSection>
     </Box>
   )
 }
 
-Awards.defaultProps = {
-  awards: [],
+Publications.defaultProps = {
+  publications: [],
 }
 
-export default Awards
+export { Publications }

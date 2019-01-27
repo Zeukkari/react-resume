@@ -30,4 +30,4 @@ Languages.defaultProps = {
   language: [],
 }
 
-export default Languages
+export { Languages }

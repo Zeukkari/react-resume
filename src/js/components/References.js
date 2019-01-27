@@ -28,4 +28,4 @@ References.defaultProps = {
   references: [],
 }
 
-export default References
+export { References }

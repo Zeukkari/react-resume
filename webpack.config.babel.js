@@ -1,25 +1,45 @@
-import path from 'path'
+import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
+
+const plugins = [
+  new CleanWebpackPlugin(['dist']),
+  new CopyWebpackPlugin([
+    { from: './README.md' },
+    { from: './package.json' },
+    { from: './tools', to: 'tools' },
+  ]),
+];
 
 export default {
-  entry: './src/index.js',
+  devtool: 'hidden-source-map',
+  entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2',
+    path: path.resolve('./dist'),
+    filename: 'grommet.min.js',
+    libraryTarget: 'var',
+    library: 'GrommetControls',
+  },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM',
+  },
+  resolve: {
+    extensions: ['.js', '.json'],
+  },
+  plugins,
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|bower_components|dist)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env'],
-          },
-        },
+        exclude: /node_modules/,
+        loader: 'babel-loader',
       },
     ],
   },
-}
+};

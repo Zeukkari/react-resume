@@ -38,4 +38,4 @@ Skills.defaultProps = {
   skills: [],
 }
 
-export default Skills
+export { Skills }

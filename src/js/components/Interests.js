@@ -35,4 +35,4 @@ Interests.defaultProps = {
   language: [],
 }
 
-export default Interests
+export { Interests }

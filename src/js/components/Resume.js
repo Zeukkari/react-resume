@@ -6,23 +6,23 @@ import { Box, Heading } from 'grommet'
 
 import { Spinning } from 'grommet-controls'
 
-import Awards from './components/Awards'
-import { Summary, Picture, Contact } from './components/Basics'
-import Education from './components/Education'
-import Interests from './components/Interests'
-import Languages from './components/Languages'
-import Publications from './components/Publications'
-import References from './components/References'
-import Skills from './components/Skills'
-import Volunteer from './components/Volunteer'
-import Work from './components/Work'
+import Awards from './Awards'
+import { Summary, Picture, Contact } from './Basics'
+import Education from './Education'
+import Interests from './Interests'
+import Languages from './Languages'
+import Publications from './Publications'
+import References from './References'
+import Skills from './Skills'
+import Volunteer from './Volunteer'
+import Work from './Work'
 
 import {
   ResumeLayout,
   TopLayout,
   LeftColumnLayout,
   RightColumnLayout,
-} from './components/Layout'
+} from './Layout'
 
 export const Loading = () => (
   <Box margin="auto" align="center" justify="center" height="full" width="full">
@@ -30,7 +30,7 @@ export const Loading = () => (
   </Box>
 )
 
-export class Resume extends Component {
+class Resume extends Component {
   constructor(props) {
     super(props)
     this.state = { isValid: false, error: undefined }
@@ -184,3 +184,5 @@ export class Resume extends Component {
     }
   }
 }
+
+export { Resume }
