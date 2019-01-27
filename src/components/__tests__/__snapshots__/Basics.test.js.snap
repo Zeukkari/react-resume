@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders basics section contact info 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 bMAySM"
+>
+  <span
+    className="StyledText-sc-1sadyjn-0 fWSbXS"
+  >
+     email: 
+    john@gmail.com
+     
+  </span>
+  <span
+    className="StyledText-sc-1sadyjn-0 fWSbXS"
+  >
+     website: 
+    http://johndoe.com
+     
+  </span>
+  <span
+    className="StyledText-sc-1sadyjn-0 fWSbXS"
+  >
+     Location: 
+    2712 Broadway St CA 94115 San Francisco US California
+     
+  </span>
+  <span
+    className="StyledText-sc-1sadyjn-0 fWSbXS"
+  >
+     Phone: 
+    (912) 555-4321
+     
+  </span>
+  <div
+    className="StyledBox-sc-13pk1d4-0 ffeAql"
+  >
+    <button
+      className="StyledButton-sc-323bzc-0 lhIxjU"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      type="button"
+    >
+      Twitter
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders basics section picture 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 dZFMXT"
+>
+  <button
+    className="StyledButton-sc-323bzc-0 lhIxjU"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    type="button"
+  >
+    PUT FACE HERE
+  </button>
+</div>
+`;
+
+exports[`renders basics section summary 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 lhNMsi"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 fhsCOz"
+  >
+    <h1
+      className="StyledHeading-sc-1rdh4aw-0 jsirCP"
+      size="small"
+    >
+      John Doe
+    </h1>
+    <h2
+      className="StyledHeading-sc-1rdh4aw-0 gBAiLn"
+      size="small"
+    >
+      Programmer
+    </h2>
+    <p
+      className="StyledParagraph-tbetod-0 JlbWj"
+      size="small"
+    >
+      A summary of John Doe...
+    </p>
+  </div>
+</div>
+`;

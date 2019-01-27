@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders work section 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 eRCNqM"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 lhNMsi"
+  >
+    <h1
+      className="StyledHeading-sc-1rdh4aw-0 jVpYfH"
+      size="medium"
+    >
+      Work
+    </h1>
+    <div
+      className="StyledBox-sc-13pk1d4-0 IRSNj"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 IRSNj"
+      >
+        <h3
+          className="StyledHeading-sc-1rdh4aw-0 gRvHvF"
+        >
+          Company
+        </h3>
+        <div
+          className="StyledBox-sc-13pk1d4-0 ffeAql"
+        >
+          2013-01-01
+           - 
+          2014-01-01
+        </div>
+        <p
+          className="StyledParagraph-tbetod-0 kxFtnQ"
+        >
+          Description...
+        </p>
+        <span
+          className="StyledText-sc-1sadyjn-0 dndifk"
+          size="medium"
+        >
+          Highlights
+        </span>
+        <div
+          className="StyledBox-sc-13pk1d4-0 IRSNj"
+        >
+          <span
+            className="StyledText-sc-1sadyjn-0 fWSbXS"
+          >
+            Started the company
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders common resume section 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 lhNMsi"
+/>
+`;
+
+exports[`renders common resume title 1`] = `
+<h1
+  className="StyledHeading-sc-1rdh4aw-0 jVpYfH"
+  size="medium"
+/>
+`;

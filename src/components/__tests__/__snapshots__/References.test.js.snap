@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders references section 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 eRCNqM"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 lhNMsi"
+  >
+    <h1
+      className="StyledHeading-sc-1rdh4aw-0 jVpYfH"
+      size="medium"
+    >
+      References
+    </h1>
+    <div
+      className="StyledBox-sc-13pk1d4-0 IRSNj"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 IRSNj"
+      >
+        <h3
+          className="StyledHeading-sc-1rdh4aw-0 gRvHvF"
+        >
+          Jane Doe
+        </h3>
+        <p
+          className="StyledParagraph-tbetod-0 kxFtnQ"
+        >
+          Reference...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
