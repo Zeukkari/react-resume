@@ -22,7 +22,9 @@
     "preinstall": "npm clean",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest src",
-    "test:coverage": "jest src --coverage && codecov"
+    "test:coverage": "jest src --coverage && codecov",
+    "test:update": "grommet check -t -- --updateSnapshot",
+    "test:watch": "grommet check -t -- --watchAll"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -97,12 +99,11 @@
       "lcov"
     ],
     "collectCoverageFrom": [
-      "src/**/*.{js}"
+      "src/js/components/**/*.{js}",
+      "src/js/theme/**/*.{js}"
     ],
     "modulePathIgnorePatterns": [
-      "<rootDir>/dist/",
-      "<rootDir>/templates/",
-      "<rootDir>/node_modules/"
+      "<rootDir>/dist/"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>[/\\\\](dist|templates|node_modules)[/\\\\]"
