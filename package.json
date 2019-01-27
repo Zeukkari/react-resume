@@ -15,7 +15,7 @@
     "check": "npm run lint && npm test",
     "clean": "rimraf dist",
     "lint": "eslint src",
-    "start": "webpack-dev-server --mode development",
+    "start": "npm run storybook",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest src",
     "test:coverage": "jest src --coverage && codecov"
