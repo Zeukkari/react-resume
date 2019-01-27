@@ -1,5 +1,6 @@
 {
-  "name": "react-resume",
+  "name": "@resumebuilder/react-resume",
+  "private": true,
   "version": "0.1.0",
   "author": {
     "name": "Timo Aho",
