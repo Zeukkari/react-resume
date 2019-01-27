@@ -9,9 +9,9 @@
   "description": "React resume component",
   "repository": "git@github.com:Zeukkari/react-resume.git",
   "license": "MIT",
-  "main": "dist/resume.js",
-  "module": "dist/resume.esm.js",
-  "browser": "dist/resume.umd.js",
+  "main": "index.js",
+  "module": "es6/index.js",
+  "jsnext:main": "es6/index.js",
   "scripts": {
     "build": "webpack --mode production && babel ./src/js/ --ignore '__tests__' --out-dir ./dist && cross-env BABEL_ENV=es6 babel ./src/js/ --ignore '__tests__' --out-dir ./dist/es6",
     "build:storybook": "build-storybook -c .storybook -o dist/storybook",
