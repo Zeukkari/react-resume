@@ -1,7 +1,7 @@
 export { Resume, Loading } from './Resume'
 
 export { Awards } from './Awards'
-export { Basics } from './Basics'
+export { Picture, Summary, Contact } from './Basics'
 export { Education } from './Education'
 export { Interests } from './Interests'
 export { Languages } from './Languages'

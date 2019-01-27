@@ -3,24 +3,24 @@ import { storiesOf } from '@storybook/react'
 
 import { Grommet, Box, Button } from 'grommet'
 
-import { Resume, Loading } from '../src'
+import { Resume, Loading } from '../src/js/components/Resume'
 
-import Awards from '../src/components/Awards'
-import Basics from '../src/components/Basics'
-import Education from '../src/components/Education'
-import Interests from '../src/components/Interests'
-import Languages from '../src/components/Languages'
-import Publications from '../src/components/Publications'
-import References from '../src/components/References'
-import Skills from '../src/components/Skills'
-import Volunteer from '../src/components/Volunteer'
-import Work from '../src/components/Work'
+import { Awards } from '../src/js/components/Awards'
+import { Picture, Summary, Contact } from '../src/js/components/Basics'
+import { Education } from '../src/js/components/Education'
+import { Interests } from '../src/js/components/Interests'
+import { Languages } from '../src/js/components/Languages'
+import { Publications } from '../src/js/components/Publications'
+import { References } from '../src/js/components/References'
+import { Skills } from '../src/js/components/Skills'
+import { Volunteer } from '../src/js/components/Volunteer'
+import { Work } from '../src/js/components/Work'
 import {
   ResumeLayout,
   TopLayout,
   LeftColumnLayout,
   RightColumnLayout,
-} from '../src/components/Layout'
+} from '../src/js/components/Layout'
 import defaultResume from './defaultResume.json'
 
 storiesOf('Resume', module)
@@ -161,7 +161,21 @@ storiesOf('Layout/Right Column', module).add('Default', () => {
 })
 
 storiesOf('Resume/Basics section', module).add('Default', () => (
-  <Basics {...defaultResume.basics} />
+  <TopLayout>
+    <Box align="center" justify="center">
+      <Picture picture={defaultResume.basics.picture} />
+    </Box>
+
+    <Summary name={defaultResume.basics.name} label={defaultResume.basics.label} summary={defaultResume.basics.summary} />
+
+    <Contact
+      email={defaultResume.basics.email}
+      phone={defaultResume.basics.phone}
+      website={defaultResume.basics.website}
+      location={defaultResume.basics.location}
+      profiles={defaultResume.basics.profiles}
+    />
+  </TopLayout>
 ))
 
 storiesOf('Resume/Awards section', module).add('Default', () => (
