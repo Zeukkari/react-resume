@@ -30,7 +30,7 @@ export const Loading = () => (
   </Box>
 )
 
-export default class Resume extends Component {
+export class Resume extends Component {
   constructor(props) {
     super(props)
     this.state = { isValid: false, error: undefined }

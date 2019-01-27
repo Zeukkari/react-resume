@@ -15,7 +15,6 @@
     "check": "npm run lint && npm test",
     "clean": "rimraf dist",
     "lint": "eslint src",
-    "start": "npm run storybook",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest src",
     "test:coverage": "jest src --coverage && codecov"
@@ -92,5 +91,16 @@
   },
   "pre-commit": [
     "check"
-  ]
+  ],
+  "babel": {
+    "presets": ["env", "stage-1", "react"],
+    "plugins": [
+      "styled-components"
+    ],
+    "env": {
+      "production": {
+        "plugins": ["grommet"]
+      }
+    }
+  }
 }

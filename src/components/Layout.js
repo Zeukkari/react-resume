@@ -13,6 +13,8 @@ export const TopLayout = ({ children }) => {
       ]}
       columns={['small', 'large']}
       rows={['auto', 'auto']}
+      pad="none"
+      margin="none"
       gap="none"
     >
       <Box gridArea="left" margin="auto">
@@ -48,7 +50,9 @@ export const ResumeLayout = ({ children }) => {
       ]}
       columns={['1/2', '1/2']}
       rows={['small', 'auto']}
-      gap="small"
+      gap="none"
+      pad="none"
+      margin="none"
     >
       <Box gridArea="header">{children[0]}</Box>
 

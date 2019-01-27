@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import { Grommet, Box, Button } from 'grommet'
 
-import Resume, { Loading } from '../src'
+import { Resume, Loading } from '../src'
 
 import Awards from '../src/components/Awards'
 import Basics from '../src/components/Basics'
@@ -53,19 +53,40 @@ storiesOf('Resume', module)
 
 storiesOf('Layout/Default', module).add('Default', () => {
   const Top = () => (
-    <Box align="center" pad="large" background="accent-1">
+    <Box
+      fill
+      align="center"
+      pad="large"
+      margin="none"
+      gap="none"
+      background="accent-1"
+    >
       <Button label="Header" onClick={() => {}} primary />
     </Box>
   )
 
   const Left = () => (
-    <Box align="center" pad="large" background="accent-2">
+    <Box
+      fill
+      align="center"
+      pad="large"
+      margin="none"
+      gap="none"
+      background="accent-2"
+    >
       <Button label="Left column" onClick={() => {}} primary />
     </Box>
   )
 
   const Right = () => (
-    <Box align="center" pad="large" background="accent-4">
+    <Box
+      fill
+      align="center"
+      pad="large"
+      margin="none"
+      gap="none"
+      background="accent-4"
+    >
       <Button label="Right column" onClick={() => {}} primary />
     </Box>
   )
