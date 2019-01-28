@@ -1,6 +1,5 @@
 {
   "name": "@resumebuilder/react-resume",
-  "private": true,
   "version": "0.1.0",
   "author": {
     "name": "Timo Aho",
@@ -19,7 +18,6 @@
     "clean": "rimraf dist",
     "dev": "rollup -c -w",
     "lint": "eslint src",
-    "preinstall": "npm clean",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest src",
     "test:coverage": "jest src --coverage && codecov",
