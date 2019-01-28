@@ -19,7 +19,8 @@
     "lint": "eslint src",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest src",
-    "test:coverage": "jest src --coverage && codecov"
+    "test:coverage": "jest src --coverage && codecov",
+    "postinstall": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"

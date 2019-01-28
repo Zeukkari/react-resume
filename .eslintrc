@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  "parser": "eslint",
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
@@ -14,9 +14,14 @@
       "version": "detect"
     },
     "propWrapperFunctions": [
-        "forbidExtraProps",
-        {"property": "freeze", "object": "Object"},
-        {"property": "myFavoriteWrapper"}
+      "forbidExtraProps",
+      {
+        "property": "freeze",
+        "object": "Object"
+      },
+      {
+        "property": "myFavoriteWrapper"
+      }
     ]
   },
   "env": {
