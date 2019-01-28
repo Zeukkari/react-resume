@@ -13,6 +13,7 @@
   "jsnext:main": "es6/index.js",
   "scripts": {
     "build": "webpack --mode production && babel ./src/js/ --ignore '__tests__' --out-dir ./dist && cross-env BABEL_ENV=es6 babel ./src/js/ --ignore '__tests__' --out-dir ./dist/es6",
+    "preinstall": "npm build",
     "build:storybook": "build-storybook -c .storybook -o dist/storybook",
     "check": "npm run lint && npm test",
     "clean": "rimraf dist",
