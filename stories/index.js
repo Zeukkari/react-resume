@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
@@ -213,3 +214,4 @@ storiesOf('Resume/Volunteer section', module).add('Default', () => (
 storiesOf('Resume/Work section', module).add('Default', () => (
   <Work work={defaultResume.work} />
 ))
+*/

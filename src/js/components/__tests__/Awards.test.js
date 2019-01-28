@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Awards from '../Awards'
+import {Awards} from '../Awards'
 
 import defaultResume from './mockResume.json'
 

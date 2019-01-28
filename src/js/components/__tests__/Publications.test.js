@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Publications from '../Publications'
+import {Publications} from '../Publications'
 
 import defaultResume from './mockResume.json'
 

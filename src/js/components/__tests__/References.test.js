@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import References from '../References'
+import {References} from '../References'
 
 import defaultResume from './mockResume.json'
 

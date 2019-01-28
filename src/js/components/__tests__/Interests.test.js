@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Interests from '../Interests'
+import {Interests} from '../Interests'
 
 import defaultResume from './mockResume.json'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Work from '../Work'
+import {Work} from '../Work'
 
 import defaultResume from './mockResume.json'
 

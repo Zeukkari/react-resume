@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Education from '../Education'
+import {Education} from '../Education'
 
 import defaultResume from './mockResume.json'
 

@@ -1,27 +1,23 @@
-import path from 'path';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
+import path from 'path'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 const plugins = [
   new CleanWebpackPlugin(['dist']),
-  new CopyWebpackPlugin([
-    { from: './README.md' },
-    { from: './package.json' },
-    { from: './tools', to: 'tools' },
-  ]),
-];
+  new CopyWebpackPlugin([{ from: './README.md' }, { from: './package.json' }]),
+]
 
 export default {
   devtool: 'hidden-source-map',
   entry: './src/js/index.js',
   output: {
     path: path.resolve('./dist'),
-    filename: 'grommet.min.js',
+    filename: 'react-resume.min.js',
     libraryTarget: 'var',
-    library: 'GrommetControls',
+    library: 'ReactResume',
   },
   externals: {
-    'react': 'React',
+    react: 'React',
     'react-dom': 'ReactDOM',
   },
   resolve: {
@@ -42,4 +38,4 @@ export default {
       },
     ],
   },
-};
+}
